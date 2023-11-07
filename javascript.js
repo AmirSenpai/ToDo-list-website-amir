@@ -63,7 +63,9 @@ function buttontask() {
 function darktheme(){
     let bodybg = document.getElementById("body");
     let taskborder = document.getElementById("task-items");
+    let counterborder = document.getElementById("taskcounters");
     bodybg.style.background = "#151515";
     bodybg.style.color = "white";
-    taskborder.style.borderColor = "white";
+    // taskborder.style.borderColor = "white";
+    counterborder.style.borderColor = "LightGreen";
 }
