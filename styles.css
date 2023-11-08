@@ -74,17 +74,20 @@ label{
     display: flex;
     justify-content: left;
     border: 1px solid lightgray;
-    border-radius: 5px;
     width: 350px;
     margin: auto;
     margin-top: 15px;
     padding-bottom: 16px;
-    /*transition: 0.5s ease-in-out;*/
 }
 .checkbox {
     margin-right: 20px;
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 26px;
+    height: 20px;
+    width: 20px;
+}
+input[type=checkbox]:checked{
+    accent-color: yellowgreen;
 }
 .contain-button{
     margin-top: 30px;
@@ -97,8 +100,8 @@ label{
     color: white;
     border: none;
     outline: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 2px;
     transition: 0.2s ease-in-out;
 }
 #dark-mode:hover{
