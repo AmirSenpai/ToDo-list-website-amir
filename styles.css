@@ -9,7 +9,8 @@
     font-size: 15px;
     margin-top: 15px;
     margin-bottom: -20px;
-    text-shadow: 1px 1px 10px lightgreen;
+    text-shadow: 1px 1px 10px mediumpurple;
+    font-style: italic;
 }
 .info{
     margin-bottom: 15px;
@@ -72,7 +73,7 @@ label{
 .task-item {
     display: flex;
     justify-content: left;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     border-radius: 5px;
     width: 350px;
     margin: auto;
