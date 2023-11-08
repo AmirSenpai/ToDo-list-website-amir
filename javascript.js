@@ -1,3 +1,4 @@
+//created by AmirSenpai on GitHub
 //tasks limits
 let limit = 7;
 //current tasks count
