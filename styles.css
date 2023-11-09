@@ -5,15 +5,28 @@
     box-sizing: border-box;
 }
 
-.amir{
-    font-size: 15px;
-    margin-top: 15px;
-    margin-bottom: -20px;
-    text-shadow: 1px 1px 10px mediumpurple;
-    font-style: italic;
+/*.amir{*/
+/*    font-size: 15px;*/
+/*    margin-top: 15px;*/
+/*    margin-bottom: -20px;*/
+/*    text-shadow: 1px 1px 10px mediumpurple;*/
+/*    font-style: italic;*/
+/*}*/
+.version{
+    margin-bottom: -30px;
+    margin-top: 5px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .info{
     margin-bottom: 15px;
+}
+#body{
+    background: whitesmoke;
 }
 
 @keyframes gradient {
@@ -94,7 +107,7 @@ input[type=checkbox]:checked{
     margin-bottom: -20px;
 }
 #dark-mode{
-    width: 100px;
+    width: 150px;
     height: 30px;
     background: #282828;
     color: white;
@@ -103,6 +116,7 @@ input[type=checkbox]:checked{
     cursor: pointer;
     border-radius: 2px;
     transition: 0.2s ease-in-out;
+    border-radius: 5px;
 }
 #dark-mode:hover{
     background: #212121;
