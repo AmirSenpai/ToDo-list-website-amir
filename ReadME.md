@@ -6,3 +6,4 @@
 ```javascript
 //created by AmirSenpai on GitHub
 ```
+#### written only for learning the use of some js code. with the help of an AI called sider. 
