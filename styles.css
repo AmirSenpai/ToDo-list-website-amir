@@ -15,6 +15,8 @@
 .version{
     margin-bottom: -30px;
     margin-top: 5px;
+    padding-bottom: 10px;
+    font-family: monospace;
 }
 .nav{
     display: flex;
@@ -32,6 +34,7 @@ a{
 }
 .info{
     margin-bottom: 15px;
+    margin-top: 5px;
 }
 #body{
     background: whitesmoke;
