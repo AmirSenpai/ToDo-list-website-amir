@@ -131,12 +131,12 @@ input[type=checkbox]:checked{
 .dark-mode:hover{
     background: #212121;
 }
-.taskcounter{
-    display: flex;
-    width: 250px;
-    margin: auto;
-    border: 1px solid black;
-    padding: 5px;
-    justify-content: center;
-    border-radius: 1px;
-}
+/*.taskcounter{*/
+/*    display: flex;*/
+/*    width: 250px;*/
+/*    margin: auto;*/
+/*    border: 1px solid black;*/
+/*    padding: 5px;*/
+/*    justify-content: center;*/
+/*    border-radius: 1px;*/
+/*}*/
