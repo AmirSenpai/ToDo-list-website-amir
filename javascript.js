@@ -71,19 +71,15 @@
 //     counterborder.style.borderColor = "LightGreen";
 // }
 // Created by AmirSenpai on GitHub
-
-// Tasks limit
+// Define the task limit and current task count
 const limit = 7;
-// Current tasks count
 let currentAmount = 0;
-// Number of completed tasks
-let count = 0;
 
-// When the document is fully loaded, execute the function
-document.addEventListener("DOMContentLoaded", () => {
-    // Load tasks from local storage or initialize an empty array
+// Load tasks from local storage when the page is loaded
+document.addEventListener("DOMContentLoaded", function () {
+    // Get saved tasks from local storage
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    // Iterate through the saved tasks and add them to the DOM
+    // Add saved tasks to the DOM
     savedTasks.forEach(task => {
         addTaskToDOM(task);
     });
@@ -160,16 +156,24 @@ function saveTasksToLocalStorage() {
 
 // Function to add a new task
 function buttontask() {
-    // Check if the current amount of tasks is less than the limit
-    if (currentAmount < limit) {
-        // Get the input field for the task and add it to the DOM
-        const inputField = document.getElementById("task-input");
-        addTaskToDOM({ text: inputField.value, completed: false });
-        // Clear the input field after adding the task
-        inputField.value = "";
+    // Get the input field for the task
+    const inputField = document.getElementById("task-input");
+
+    // Check if the input field is not empty
+    if (inputField.value.trim() !== "") {
+        // Check if the current amount of tasks is less than the limit
+        if (currentAmount < limit) {
+            // Add the input field value to the DOM as a new task
+            addTaskToDOM({ text: inputField.value, completed: false });
+            // Clear the input field after adding the task
+            inputField.value = "";
+        } else {
+            // Alert the user if the task limit is reached
+            alert("You've reached your limits for tasks. Remove some to be able to add more tasks.");
+        }
     } else {
-        // Alert the user if the task limit is reached
-        alert("You've reached your limits for tasks. Remove some to be able to add more tasks.");
+        // Alert the user if the input field is empty
+        alert("Please enter a task before adding.");
     }
 }
 
