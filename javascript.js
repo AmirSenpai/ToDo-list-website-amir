@@ -83,17 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     savedTasks.forEach(task => {
         addTaskToDOM(task);
     });
-    // // Count the number of completed tasks
-    // count = savedTasks.filter(task => task.completed).length;
-    // // Update the task counter
-    // updateCounter();
 });
-
-// Function to update the task counter
-// function updateCounter() {
-//     const counter = document.getElementById("count");
-//     counter.innerHTML = count.toString();
-// }
 
 // Function to add a task to the DOM
 function addTaskToDOM(task) {
@@ -116,15 +106,11 @@ function addTaskToDOM(task) {
             // After a delay, remove the task from the DOM and update the counters
             setTimeout(() => {
                 taskItem.remove();
-                // count++;
-                // updateCounter();
                 currentAmount--;
                 saveTasksToLocalStorage();
             }, 1500);
         } else {
             taskP.style.textDecoration = "none";
-            // count--;
-            // updateCounter();
             saveTasksToLocalStorage();
         }
     });
