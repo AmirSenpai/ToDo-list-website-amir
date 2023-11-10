@@ -22,6 +22,14 @@
     align-items: center;
     justify-content: center;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+#nav-button:hover{
+    transition: 0.4s ease-in-out;
+    font-size: 20px;
+}
 .info{
     margin-bottom: 15px;
 }
@@ -106,7 +114,7 @@ input[type=checkbox]:checked{
     margin-top: 30px;
     margin-bottom: -20px;
 }
-#dark-mode{
+.dark-mode{
     width: 150px;
     height: 30px;
     background: #282828;
@@ -117,8 +125,10 @@ input[type=checkbox]:checked{
     border-radius: 2px;
     transition: 0.2s ease-in-out;
     border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
-#dark-mode:hover{
+.dark-mode:hover{
     background: #212121;
 }
 .taskcounter{
