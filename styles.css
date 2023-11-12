@@ -111,7 +111,7 @@ label{
     width: 20px;
 }
 input[type=checkbox]:checked{
-    accent-color: yellowgreen;
+    accent-color: #25d753;
 }
 .contain-button{
     margin-top: 30px;
