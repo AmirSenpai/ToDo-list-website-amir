@@ -4,7 +4,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .tasks {
+        margin-top: 5%;
+    }
+    .info{
+        font-size: 14px;
+    }
+    label {
+        font-size: 16px;
+    }
+    #task-input{
+        font-size: 14px;
+        width: 80%;
+    }
+    #button-task{
+        width: 9%;
+    }
+    .task-item {
+        width: 90%;
+        margin: auto;
+    }
+    .dark-mode {
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+    }
+    #labelforinput{
+        display: none;
+    }
+}
 /*.amir{*/
 /*    font-size: 15px;*/
 /*    margin-top: 15px;*/
