@@ -158,12 +158,12 @@ function buttontask() {
     } else {
       // Alert the user if the task limit is reached
       alert(
-        "You've reached your limits for tasks. Remove some to be able to add more tasks."
+        "به حد نصاب تسک ها در روز رسیدی، چند تا کارهات رو تموم کن تا بتونی بازم اضافه کنی"
       );
     }
   } else {
     // Alert the user if the input field is empty
-    alert("Please enter a task before adding.");
+    alert("لطفا یه چیزی بنویس بعد دکمه ثبتو بزن :)");
   }
 }
 
