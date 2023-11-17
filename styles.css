@@ -74,7 +74,8 @@ a {
   margin-top: 5px;
 }
 #body {
-  background: whitesmoke;
+  background: #151515;
+  color: white;
 }
 
 @keyframes gradient {
@@ -166,10 +167,10 @@ input[type="checkbox"]:checked {
   margin-top: 30px;
   margin-bottom: -20px;
 }
-.dark-mode {
+.github {
   width: 150px;
   height: 30px;
-  background: #282828;
+  background: #1e1e1e;
   color: white;
   border: none;
   outline: none;
@@ -180,6 +181,22 @@ input[type="checkbox"]:checked {
   margin-right: 20px;
   margin-left: 20px;
 }
-.dark-mode:hover {
+.github:hover {
   background: #212121;
+}
+.delete{
+  background: #820019;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  margin-left: -15px;
+  margin-top: 26px;
+  height: 20px;
+  width: 50px;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.delete:hover{
+  background: white;
+  color: black;
 }

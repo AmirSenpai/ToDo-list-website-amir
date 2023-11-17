@@ -93,7 +93,12 @@ function addTaskToDOM(task) {
   const taskItem = document.createElement("p");
   taskItem.className = "task-item";
   taskItem.id = "task-items";
-
+  //create the delete button
+  const deletebtn = document.createElement("button");
+  deletebtn.innerText = "delete";
+  deletebtn.className = "delete";
+  // deletebtn.onclick = 'delete();';
+  deletebtn.id = "delete-btn";
   // Create a checkbox input element
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
@@ -105,14 +110,19 @@ function addTaskToDOM(task) {
       taskP.style.textDecoration = "line-through";
       // After a delay, remove the task from the DOM and update the counters
       setTimeout(() => {
-        taskItem.remove();
+        // taskItem.remove();
         currentAmount--;
         saveTasksToLocalStorage();
-      }, 1500);
+      }, 500);
     } else {
       taskP.style.textDecoration = "none";
       saveTasksToLocalStorage();
     }
+  });
+  deletebtn.addEventListener("click", function (){
+    taskItem.remove();
+    currentAmount--;
+    saveTasksToLocalStorage();
   });
 
   // Create a paragraph element for the task text
@@ -121,6 +131,7 @@ function addTaskToDOM(task) {
 
   // Append the checkbox and task text to the task item and add it to the task list
   taskItem.appendChild(checkbox);
+  taskItem.appendChild(deletebtn);
   taskItem.appendChild(taskP);
   taskList.appendChild(taskItem);
 
@@ -168,10 +179,10 @@ function buttontask() {
 }
 
 // Function to switch to a dark theme
-function darktheme() {
-  // Get the body element
-  let bodybg = document.getElementById("body");
-  // Apply dark theme styles
-  bodybg.style.background = "#151515";
-  bodybg.style.color = "white";
-}
+// function darktheme() {
+//   // Get the body element
+//   let bodybg = document.getElementById("body");
+//   // Apply dark theme styles
+//   bodybg.style.background = "#151515";
+//   bodybg.style.color = "white";
+// }
