@@ -23,8 +23,8 @@ function addTaskToDOM(task) {
   taskItem.id = "task-items";
   //create the delete button
   const deletebtn = document.createElement("button");
-  deletebtn.innerText = "delete";
-  deletebtn.className = "delete";
+  // deletebtn.innerText = "delete";
+  deletebtn.className = "fas fa-trash";
   // deletebtn.onclick = 'delete();';
   deletebtn.id = "delete-btn";
   // Create a checkbox input element
