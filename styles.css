@@ -157,8 +157,8 @@ label {
   margin-right: 20px;
   margin-left: 10px;
   margin-top: 26px;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
 }
 input[type="checkbox"]:checked {
   accent-color: #25d753;
@@ -183,19 +183,20 @@ input[type="checkbox"]:checked {
 .github:hover {
   background: #212121;
 }
-.delete{
+.fas{
   background: #820019;
+  font-size: smaller;
   color: white;
   border: none;
-  margin-right: 5px;
+  margin-right: 7px;
   margin-left: -15px;
-  margin-top: 26px;
-  height: 20px;
-  width: 50px;
+  margin-top: 24px;
+  height: 26px;
+  width: 30px;
   transition: 0.3s ease-in-out;
   border-radius: 5px;
 }
-.delete:hover{
+.fas:hover{
   background: white;
   color: black;
 }
