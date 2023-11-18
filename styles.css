@@ -167,7 +167,7 @@ input[type="checkbox"]:checked {
   margin-top: 30px;
   margin-bottom: -20px;
 }
-.github {
+.github, .Log {
   width: 150px;
   height: 30px;
   background: #1e1e1e;
@@ -175,7 +175,6 @@ input[type="checkbox"]:checked {
   border: none;
   outline: none;
   cursor: pointer;
-  border-radius: 2px;
   transition: 0.2s ease-in-out;
   border-radius: 5px;
   margin-right: 20px;
