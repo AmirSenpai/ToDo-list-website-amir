@@ -1,8 +1,4 @@
 // Created by AmirSenpai on GitHub
-// Define the task limit and current task count
-// const limit = 100;
-// let currentAmount = 0;
-
 // Load tasks from local storage when the page is loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Get saved tasks from local storage
@@ -23,9 +19,7 @@ function addTaskToDOM(task) {
   taskItem.id = "task-items";
   //create the delete button
   const deletebtn = document.createElement("button");
-  // deletebtn.innerText = "delete";
   deletebtn.className = "fas fa-trash";
-  // deletebtn.onclick = 'delete();';
   deletebtn.id = "delete-btn";
   // Create a checkbox input element
   const checkbox = document.createElement("input");
@@ -36,7 +30,6 @@ function addTaskToDOM(task) {
   checkbox.addEventListener("change", function () {
     if (this.checked) {
       taskP.style.textDecoration = "line-through";
-      // currentAmount--;
       saveTasksToLocalStorage();
     } else {
       taskP.style.textDecoration = "none";
@@ -45,13 +38,19 @@ function addTaskToDOM(task) {
   });
   deletebtn.addEventListener("click", function (){
     taskItem.remove();
-    // currentAmount--;
     saveTasksToLocalStorage();
   });
 
   // Create a paragraph element for the task text
   const taskP = document.createElement("p");
   taskP.innerText = task.text;
+  // // get time for time of creation to tasks
+  // const now = new Date();
+  // const hours = now.getHours();
+  // const minutes = now.getMinutes();
+  // const task_time = document.createElement("p");
+  // task_time.className = "task-time";
+  // task_time.innerText = hours + ":" + minutes;
 
   // Append the checkbox and task text to the task item and add it to the task list
   taskItem.appendChild(checkbox);
@@ -59,8 +58,6 @@ function addTaskToDOM(task) {
   taskItem.appendChild(taskP);
   taskList.appendChild(taskItem);
 
-  // Increment the current task count
-  // currentAmount++;
   // Save the tasks to local storage
   saveTasksToLocalStorage();
 }
@@ -86,16 +83,6 @@ function buttontask() {
     // Check if the current amount of tasks is less than the limit
     addTaskToDOM({ text: inputField.value, completed: false });
     inputField.value = "";
-    // if (currentAmount < limit) {
-    //   // Add the input field value to the DOM as a new task
-    //
-    //   // Clear the input field after adding the task
-    // } else {
-    //   // Alert the user if the task limit is reached
-    //   alert(
-    //     "به حد نصاب تسک ها در روز رسیدی، چند تا کارهات رو تموم کن تا بتونی بازم اضافه کنی"
-    //   );
-    // }
   } else {
     // Alert the user if the input field is empty
     alert("لطفا یه چیزی بنویس بعد دکمه ثبتو بزن :)");
