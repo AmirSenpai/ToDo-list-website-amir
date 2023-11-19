@@ -1,11 +1,11 @@
 * {
-  font-family: "Vazir", Tahoma;
+  font-family: "Vazir", Tahoma, serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
-  h1 {
+  h1{
     font-size: 20px;
   }
   p {
@@ -34,7 +34,7 @@
     width: 90%;
     margin: auto;
   }
-  .github, .log {
+  .github, .log{
     width: 120px;
     height: 25px;
     font-size: 12px;
@@ -44,10 +44,10 @@
   }
 }
 .amir{
-    font-size: 15px;
-    margin-top: 5px;
-    text-shadow: 1px 1px 10px mediumpurple;
-    font-style: italic;
+  font-size: 15px;
+  margin-top: 5px;
+  text-shadow: 1px 1px 10px mediumpurple;
+  font-style: italic;
 }
 .version {
   margin-bottom: -30px;
@@ -77,7 +77,6 @@ a {
   background: #151515;
   color: white;
 }
-
 @keyframes gradient {
   0% {
     background: radial-gradient(
@@ -96,7 +95,6 @@ a {
     );
   }
 }
-
 h1,
 p {
   text-align: center;
@@ -149,14 +147,13 @@ label {
   justify-content: left;
   border: 1px solid lightgray;
   width: 350px;
-  margin: auto;
-  margin-top: 15px;
+  margin:15px auto;
   padding-bottom: 16px;
 }
 .checkbox {
   margin-right: 20px;
   margin-left: 10px;
-  margin-top: 26px;
+  margin-top: 25px;
   height: 22px;
   width: 22px;
 }
@@ -188,15 +185,16 @@ input[type="checkbox"]:checked {
   font-size: smaller;
   color: white;
   border: none;
-  margin-right: 7px;
-  margin-left: -15px;
-  margin-top: 24px;
-  height: 26px;
+  margin:23px 7px auto -15px;
+  height: 25px;
   width: 30px;
   transition: 0.3s ease-in-out;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .fas:hover{
   background: white;
   color: black;
+}
+.task-time{
+  float: right;
 }

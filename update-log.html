@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Log - لیست آپدیت</title>
+<!--    <link rel="stylesheet" href="styles.css">-->
     <style>
         *{
-            font-family: Tahoma;
+            font-family: Tahoma,serif;
         }
         .back{
             width: 150px;
@@ -15,11 +16,8 @@
             outline: none;
             cursor: pointer;
             border-radius: 5px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 0;
-            margin-top: 25px;
             display: flex;
+            margin: 25px auto 0 auto;
             align-items: center;
             justify-content: center;
         }
@@ -27,7 +25,7 @@
             text-decoration: none;
             color: white;
         }
-        .log{
+        .logdiv{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,31 +40,37 @@
         hr{
             width: 100%;
         }
-        /*@media only screen and (max-width: 768px) {*/
-        /*    h2 {*/
-        /*        font-size: 20px;*/
-        /*    }*/
-        /*    p {*/
-        /*        font-size: 10px;*/
-        /*    }*/
-        /*}*/
+        @media only screen and (max-width: 768px) {
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
-<body>
+<body class="update-body">
     <button class="back"><a href="index.html">برگرد - Go Back</a></button>
     <br>
     <hr>
     <br>
-    <div class="log">
-        <h2>V1.3.1 - Log 11/18/2023</h2>
-        <p>آیکون بجای کلمه دلیت اضافه شد</p>
-        <p>removed the text 'delete' and added an icon instead</p>
+    <div class="logdiv">
+        <h2 class="header">V1.3.3 - Log 11/19/2023</h2>
+        <p class="para">رفع باگ و تمیز کردن کد سایت</p>
+        <p class="para">removed some bugs and cleaned up the code</p>
+        <br>
         <hr>
-        <h2>V1.3.0 - Log - 11/18/2023</h2>
-        <p>پاک شدن بخش لیمیت برای تعداد تسک ها</p>
-        <p>رفع یکسری باگ جزئی</p>
-        <p>اضافه شدن بخش اخبار آپدیت</p>
-        <p>removed the limit function from JavaScript code,<br><br> debugged some problems and added the log page & etc.</p>
+        <h2 class="header">V1.3.1 - Log 11/18/2023</h2>
+        <p class="para">آیکون بجای کلمه دلیت اضافه شد</p>
+        <p class="para">removed the text 'delete' and added an icon instead</p>
+        <br>
+        <hr>
+        <h2 class="header">V1.3.0 - Log - 11/18/2023</h2>
+        <p class="para">پاک شدن بخش لیمیت برای تعداد تسک ها</p>
+        <p class="para">رفع یکسری باگ جزئی</p>
+        <p class="para">اضافه شدن بخش اخبار آپدیت</p>
+        <p class="para">removed the limit function from JavaScript code,<br><br> debugged some problems and added the log page & etc.</p>
         <hr>
     </div>
 </body>
